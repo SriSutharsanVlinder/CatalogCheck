@@ -4,6 +4,7 @@ metadata:
   name: PR-Request
   annotations:
     github.com/project-slug: SriSutharsanVlinder/CatalogCheck
+    github.com/user-login: SriSutharsanVlinder
 spec:
   type: service
   lifecycle: unknown
