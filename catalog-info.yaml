@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: PR-Request
+  annotations:
+    github.com/project-slug: SriSutharsanVlinder/CatalogCheck
+spec:
+  type: service
+  lifecycle: unknown
+  owner: user:frontenddev1
