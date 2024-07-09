@@ -8,4 +8,4 @@ metadata:
 spec:
   type: service
   lifecycle: unknown
-  owner: user:frontenddev1
+  owner: developer
