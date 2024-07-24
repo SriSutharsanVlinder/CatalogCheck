@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agents Free Space Report</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .card {
+    width: calc(50% - 20px);
+    max-width: 300px; /* Set maximum width as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px; /* Add margin between cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .agent-name {
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .free-space {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow thickness */
+  }
+</style>
+</head>
+<body>
+  <h2>Agents Free Space Report</h2>
+  <div class="container">
+    <div class="card">
+      <div class="agent-name">ubuntu-s-1vcpu-1gb-blr1-01-ansible</div>
+      <div class="free-space">38.57 GB</div>
+    </div>
+    <div class="card">
+      <div class="agent-name">Mac-mini.local</div>
+      <div class="free-space">283.39 GB</div>
+    </div>
+  </div>
+</body>
+</html>
+  
