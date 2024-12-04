@@ -1,0 +1,135 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents Free Space and Pipelines Report</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center container horizontally */
+        margin-top: 20px;
+      }
+      .section {
+        margin-bottom: 30px;
+      }
+      .card-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Add margin below card container */
+      }
+      .card {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0 10px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .agent-name {
+        color: #3498db;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .free-space {
+        font-size: 32px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .pipeline-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Align pipelines to the left */
+      }
+      .pipeline {
+        width: calc(50% - 20px);
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .pipeline:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .pipeline-name {
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      /* Center the "Agent Storage" header and add padding */
+      .agent-storage-heading {
+        text-align: center;
+        padding-left: 40px; /* Add more padding on the left */
+      }
+    </style>
+    </head>
+    <body>
+      <div class="container">
+        <!-- Agent details section -->
+        <div class="section">
+          <h2 class="agent-storage-heading">Agents Free Space Report</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="agent-name">ubuntu-s-1vcpu-1gb-blr1-01-ansible</div>
+              <div class="free-space">33.03 GB</div>
+            </div>
+            <div class="card">
+              <div class="agent-name">Mac-mini.local</div>
+              <div class="free-space">266.51 GB</div>
+            </div>
+          </div>
+        </div>
+        <!-- Pipeline list section -->
+        <div class="section">
+          <h2>Pipelines Run in the Past 24 Hours</h2>
+          <div class="pipeline-container">
+            
+            <div class="pipeline">
+                <div class="pipeline-name">item-spec-mars-widget-react</div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-name">Klefki_Indus_v3_Admin-portal_Staging-Compile</div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-name">Klefki_Indus_v3_Admin-portal_Staging-Deploy</div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-name">Klefki_Indus_v3_Web-wallet_Staging-Compile</div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-name">Klefki_Indus_v3_Web-wallet_Staging-Deploy</div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-name">Klefki_Indus_v3_Verification-store_Staging-Compile</div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-name">Klefki_Indus_v3_Verification-store_Staging-Deploy</div>
+            </div>
+            <div class="pipeline">
+                <div class="pipeline-name">Parametro-check-event-tracker-calendar</div>
+            </div> <!-- Insert pipeline list HTML here -->
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+    
+    
